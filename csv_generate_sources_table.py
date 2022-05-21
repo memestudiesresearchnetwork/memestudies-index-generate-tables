@@ -6,7 +6,7 @@ import csv
 author_list = []
 place_list = []
 topic_list = []
-with open('Meme Studies Index .xlsx - Sheet1.csv', newline='', encoding='utf-8') as csvfile:
+with open('Meme Studies Index Cleaned.csv', newline='', encoding='utf-8') as csvfile:
 	reader = csv.DictReader(csvfile)
 	author_id = 0
 	place_id = 0
