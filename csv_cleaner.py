@@ -15,7 +15,7 @@ with open('Meme Studies Index .xlsx - Sheet1.csv', newline='', encoding='utf-8')
         #iterate through every line of csv file
         for row in reader:
             cleaned_isbn = re.sub('[^0-9]", ','',row['ISBN'])
-            article_name = row['Scholarly Article*'].replace('“','"').replace('”','"').replace("’","'") 
+            article_name = row['Scholarly Article*'].replace('“','"').replace('”','"').replace("’","'").replace("‘","'")
             cleaned_pages = row['Pages'].replace('–','-')
             link_str = row['Link (Where Applicable)']
      
