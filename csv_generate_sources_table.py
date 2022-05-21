@@ -149,7 +149,7 @@ with open('Meme Studies Index Cleaned.csv', newline='', encoding='utf-8') as csv
 
 
 #write sources & authors tables to csv file
-with open('Meme Studies Index .xlsx - Sheet1.csv', newline='', encoding='utf-8') as csvfile:
+with open('Meme Studies Index Cleaned.csv', newline='', encoding='utf-8') as csvfile:
 	reader = csv.DictReader(csvfile)
 	id = 1
 	sources_have_authors_id = 1
